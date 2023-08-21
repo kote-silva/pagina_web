@@ -1,0 +1,49 @@
+body{
+    background-image: url("fondo.jpeg");
+    background-size: cover ;
+    font-family: sans-serif;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header{
+    display: flex;
+    min-height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: darkslategrey;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+.center{
+    width: 200px;
+    margin: 0 auto;
+}
