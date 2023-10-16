@@ -40,3 +40,10 @@ nav a:hover{
 h1{
     color: aliceblue;
 }
+p{
+    color: aliceblue;
+}
+img{
+    height: 400px;
+    margin: 10px;    
+}
