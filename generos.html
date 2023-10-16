@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,20 @@
     </header>
     <hr>
     <h1>Generos</h1>
-
+    <form action="procesar_genero.py" method="post">
+        <label for="genero">Selecciona un género:</label>
+        <select name="genero" id="genero">
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="Blue">Blue</option>
+            <option value="Regae">Regae</option>
+            <!-- Agrega más opciones de géneros -->
+        </select>
+        <input type="submit" value="Mostrar Artistas">
+    </form>
+    <div id="resultados">
+        <!-- Los resultados de Python se mostrarán aquí -->
+    </div>
+    
 </body>
 </html>
