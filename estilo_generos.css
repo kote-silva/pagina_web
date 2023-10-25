@@ -43,3 +43,19 @@ h1{
 ul{
     color: aliceblue;
 }
+button{
+    font-size: 20px;
+    background-color:aliceblue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;  
+}
+button:hover{
+    background-color:lightslategray;
+
+}
