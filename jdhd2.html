@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo_artistas.css">
     <link rel="icon" href="logo2.ico">
 </head>
-<body>
+<body >
     <header>
         <a href="index.html" class="logo">
             <img src="logo.jpeg" alt="logo de la pagina">
@@ -24,21 +24,9 @@
 
     <ul id="artistList"></ul>
 
-    <a href="generos.html">Volver a la página de géneros</a>
+    <a href="generos.html">Volver a la pagina de generos</a>
 
     <script>
-        // Obtiene el género seleccionado de los parámetros de URL
-        const params = new URLSearchParams(window.location.search);
-        const generoSeleccionado = params.get("genero");
-
-        // Define la lista de artistas por género
-        const artistasPorGenero = {
-            Pop: ["Artista 1", "Artista 2", "Artista 3"],
-            RockandRoll: ["Artista A", "Artista B", "Artista C"],
-            // Define artistas para otros géneros
-        };
-
-        // Función para mostrar la lista de artistas
         function mostrarListaDeArtistas() {
             const artistList = document.getElementById('artistList');
             const artistas = artistasPorGenero[generoSeleccionado] || [];
@@ -46,7 +34,6 @@
             artistList.innerHTML = artistasHTML;
         }
 
-        // Llama a la función para mostrar la lista de artistas
         mostrarListaDeArtistas();
     </script>
 </body>

@@ -21,22 +21,47 @@
     </header>
     <hr>
     <h1>Generos</h1>
-    <a href="artistas.html">
-    <button id="Pop">Pop</button> 
-    <button id="Rock and Roll">Rock and Roll</button>
-    <button id="Indie">Indie</button>
-    <button id="Jazz">Jazz</button>
-    <button id="Clasica">Clasica</button>
-    <button id="Kpop">Kpop</button>
-    <button id="Country">Country</button>
-    <button id="Hip-Hop">Hip-Hop</button>
-    <button id="Electronica">Electronica</button>
-    <button id="Reggae">Reggae</button>
-    <button id="Metal">Metal</button>
-    <button id="Blues">Blues</button>
-    <button id="Punk">Punk</button>
-    <button id="R&B">R&B</button>
-    </a> 
+    <script>
+        const artistasPorGenero = {
+            RockandRoll:["Elvis Presley", "The Beatles"],
+            Indie:["The Smiths", "The Neighbourhood"],
+            Pop:["Michael Jackson", "Mariah Carey"],
+            Jazz:["Duke Ellington", "Charlie Parker"],
+            Clasica:["Wolfgang Amadeus Mozart", "Johann Sebastian Bach"],
+            Kpop:["BTS", "Girls Generation"],
+            Country:["George Strait", "Garth Brooks"],
+            HipHop:["Nwa", "2Pac"],
+            Electronica:["David Guetta", "Jonas Blue"],
+            Reggae:["Bob Marley", "Peter Tosh"],
+            Metal:["Metallica", "Slayer"],
+            Blues:["Robert Leroy Johnson", "Willie Dixon"],
+            Punk:["Sex Pistols", "The Ramones"],
+            RyB:["Michael Jackson", "Whitney Houston"]
+        };
+        function mostrarArtistas(genero) {
+            const artistList = document.getElementById("artistList");
+            const artistas = artistasPorGenero[genero] || [];
+            const artistasHTML = artistas.map(artist => "<li>${artist}</li>").join("");
+            artistList.innerHTML = artistasHTML;
+        }
+    </script>    
+    <a href="artistas.html">    
+
+        <button onclick="mostrarArtistas('Pop')">Pop</button> 
+        <button onclick="mostrarArtistas('RockandRoll')">Rock and Roll</button>
+        <button onclick="mostrarArtistas('Indie')">Indie</button>
+        <button onclick="mostrarArtistas('Jazz')">Jazz</button>
+        <button onclick="mostrarArtistas('Clasica')">Clasica</button>
+        <button onclick="mostrarArtistas('Kpop')">Kpop</button>
+        <button onclick="mostrarArtistas('Country')">Country</button>
+        <button onclick="mostrarArtistas('Hip-Hop')">Hip-Hop</button>
+        <button onclick="mostrarArtistas('Electronica')">Electronica</button>
+        <button onclick="mostrarArtistas('Reggae')">Reggae</button>
+        <button onclick="mostrarArtistas('Metal')">Metal</button>
+        <button onclick="mostrarArtistas('Blues')">Blues</button>
+        <button onclick="mostrarArtistas('Punk')">Punk</button>
+        <button onclick="mostrarArtistas('RyB')">R&B</button>
+    </a>
    
 </body>
 </html>
